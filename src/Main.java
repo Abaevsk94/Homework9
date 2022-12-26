@@ -1,4 +1,5 @@
 public class Main {
+
     public static void main(String[] args) {
         task1();
         task2();
@@ -47,12 +48,10 @@ public class Main {
         System.out.println("Задача 3");
         int[] arr = generateRandomArray();
         int sum = 0;
-        int average = 0;
-        int daysInMonth = 30;
         for (int element : arr) {
             sum += element;
-            average = sum / daysInMonth;
         }
+        double average = (double) sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
     }
 
